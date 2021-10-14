@@ -11,6 +11,15 @@
 <body>
     <div id="root">
         <p>O meu nome é {{nome}}<!-- interpolação de string para colocar a variável do vue --> e tenho {{idade}} anos</p> 
+        <input v-model="nome">
+        <!-- Podemos utilizar o v-<método> para instanciar o vue na tag, possibilitando até mesmo utilizar if else na tag -->
+        <div v-if="visivel">
+            <h4>Conteúdo 1</h4>
+        </div>
+
+        <div v-else>
+            <h4>Conteúdo 2</h4>
+        </div>
     </div>
 
     <script type="text/javascript" src="../script/main-vue.js"></script>
