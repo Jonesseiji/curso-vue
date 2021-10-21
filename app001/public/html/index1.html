@@ -4,11 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/app001/public/styles/style.css">
     <title>Estudando Vue.js</title>
+    <link rel="shortcut icon" href="/app001/public/img/favicon.jpg">
     <!-- Import Vue.js -->
     <script src="/vue.js"></script>
 </head>
 <body>
+    <div id="titulop">
+        <img src="/app001/public/img/favicon.jpg" alt="Vue.js Icon" id="img-titulo">
+        <h1 id="titulo" class="static-page">
+            Curso de Vue.js
+        </h1>
+    </div>
+    <section id="main-page">
     <div id="root">
         <p>O meu nome é {{nome}}<!-- interpolação de string para colocar a variável do vue --> e tenho {{idade}} anos</p>
         <input v-model="nome">
@@ -21,7 +30,9 @@
             <h4>Conteúdo 2</h4>
         </div>
     </div>
+    </section>
+    <footer id="rodape" class="static-page">&copy; Jones Seiji - 2021</footer>
 
-    <script type="text/javascript" src="../script/main-vue.js"></script>
+    <script type="text/javascript" src="/app001/script/main-vue.js"></script>
 </body>
 </html>
