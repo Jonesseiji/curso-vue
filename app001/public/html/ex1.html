@@ -17,9 +17,20 @@
             Curso de Vue.js
         </h1>
     <section id="main-page">
+
         <div id="root">
-            
+            <input v-model="novaFruta">
+            <button v-on:click="inserirFruta" class="botao" id="confirma">Inserir</button>
+            <button v-on:click="limparCampos" class="botao" id="limpa">Limpar</button>
+
+            <p>Lista de frutas: </p>
+            <ul id="listaFrutas">
+                <li v-for="fruta in frutas">{{fruta}}</li>
+            </ul>
+            <p>Total: 0</p>
+
         </div>
+
     </section>
 
     <footer id="rodape" class="static-page">&copy; Jones Seiji - 2021</footer>
