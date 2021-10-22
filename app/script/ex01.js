@@ -10,9 +10,11 @@ let root = new Vue({
     },
     methods: {
         inserirFruta: function() {
-            this.frutas.push(this.novaFruta),
+            this.frutas.push(this.novaFruta)
         },
         limparCampos: function(){
+            this.frutas = []
+            this.novaFruta = ''
         }
     }
 });

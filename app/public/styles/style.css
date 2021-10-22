@@ -1,0 +1,61 @@
+body{
+    font: 20pt normal, arial;
+    background-color: rgba(31, 29, 29, 0.979);
+}
+
+#icon{
+    border-radius: 50%;
+}
+
+#titulo{
+    padding: 20px;
+}
+
+#img-titulo{
+    border-radius: 50%;
+    width: 50px;
+    height:50px;
+}
+
+.static-page{
+    color: white;
+    text-align: center;
+}
+
+#main-page{
+    margin: auto;
+    width: 1080px;
+    height: auto;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 5px 6px rgba(0, 0, 0, 0.884);
+    background-color: white;
+}
+
+#rodape{
+    padding: 5vw;
+}
+
+.botao{
+    border-radius: 5px;
+    border: 1px;
+    border-style: solid;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.479);
+}
+
+#btnconfirma{
+    border-color: rgba(21, 209, 21, 0.699);
+    background-color: rgba(21, 209, 21, 0.699);
+}
+
+#btnlimpa{
+    border-color: rgba(255, 0, 0, 0.281);
+    background-color: rgba(255, 0, 0, 0.425);
+}
+
+.inputdata{
+    border: 2px;
+    border-style: solid;
+    border-radius: 5px;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.295);
+}
