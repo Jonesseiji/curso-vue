@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="/app/public/styles/style.css">
+    <link rel="stylesheet" type="text/css" href="/app/public/styles/ex/ex2.css">
     <link rel="shortcut icon" href="/app/public/img/favicon.jpg">
     <title>Estudando Vue.js</title>
     <!-- Import Vue.js -->
@@ -19,10 +20,11 @@
     <section id="main-page">
         <div id="root">
             <h3>O país selecionado é {{pais}}</h3>
-            <img src="" alt="Bandeira do país selecionado">
-            <button>Brasil</button>
-            <Button>Portugal</Button>
-            <Button>Japão</Button>
+            <div id="div-img"><img :src="imagem" id="img-pais"></div><!-- :src="" é o mesmo que v-bind:src="" -->
+            <!-- @click="" é o mesmo que v-on:click="" -->
+            <br><button @click="mostrarBrasil">Brasil</button>
+            <Button @click="mostrarPortugal">Portugal</Button>
+            <Button @click="mostrarJapao">Japão</Button>
         </div>
     </section>
 
