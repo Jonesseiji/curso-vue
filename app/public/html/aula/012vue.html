@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/app/public/styles/style.css">
+    <link rel="shortcut icon" href="/app/public/img/favicon.jpg">
+    <title>Estudando Vue.js</title>
+    <!-- Import Vue.js -->
+    <script src="/vue.js"></script>
+</head>
+<body>
+    <div id="titulo-page">
+        <img src="/app/public/img/favicon.jpg" alt="Vue.js Icon" id="img-titulo">
+        <h1 id="titulo" class="static-page">
+            Curso de Vue.js
+        </h1>
+    </div>
+    <section id="main-page">
+        <div id="root">
+            <p v-pre>{{texto testando}}</p><!-- se não tiver nada declarado no vue, a string interpolation será ignorada -->
+            <p v-once>{{nome}}</p><!-- Faz com que receba o valor somente uma vez, ou seja, não será alterado quando clicar no botão -->
+            <p v-text="nome"></p>
+            <button @click="exibir">Exibir Nome Completo</button>
+        </div>
+    </section>
+
+    <footer id="rodape" class="static-page">&copy; Jones Seiji - 2021</footer>
+    <script type="text/javascript" src="/app/script/012vue.js"></script>
+</body>
+</html>
