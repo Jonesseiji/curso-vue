@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/app/public/styles/style.css">
+    <link rel="shortcut icon" href="/app/public/img/favicon.jpg">
+    <title>Estudando Vue.js</title>
+    <!-- Import Vue.js -->
+    <script src="/vue.js"></script>
+</head>
+<body>
+    <div id="titulo-page">
+        <img src="/app/public/img/favicon.jpg" alt="Vue.js Icon" id="img-titulo">
+        <h1 id="titulo" class="static-page">
+            Curso de Vue.js
+        </h1>
+    </div>
+    <section id="main-page">
+        <div id="root">
+            <!-- quando clicar no botão, o visivel = true passará a ser visivel = false e os itens desaparecerão. 
+                Se clicar de novo, os itens reaparecerão pq visivel = false passa a ser visivel = true -->
+            <p v-show="visivel">Primeiro</p>
+            <p v-if="visivel">Segundo</p>
+            <div>
+                <button @click="executar">Executar</button>
+            </div>
+        </div>
+    </section>
+
+    <footer id="rodape" class="static-page">&copy; Jones Seiji - 2021</footer>
+    <script type="text/javascript" src="/app/script/013vue.js"></script>
+</body>
+</html>
