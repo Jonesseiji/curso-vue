@@ -9,7 +9,7 @@
 });*/
 //#endregion
 
-//#region Index 2
+//#region Index 2]
 let root = new Vue({ //instanciando Vue
     el: "#root", //el = elemento (pode ser string, array, etc) e deve ter o id utilizado no html para associá-lo ao vue)
     data:{ //variáveis da instância Vue
@@ -27,4 +27,16 @@ let root = new Vue({ //instanciando Vue
     }
 });
 window.alert('teste')
+//#endregion
+
+//#region Model
+let root = new Vue({ 
+    el: "#root", 
+    data:{ 
+
+    },
+    methods:{
+
+    }
+});
 //#endregion

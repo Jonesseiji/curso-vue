@@ -1,0 +1,29 @@
+{
+    "version": "0.2",
+    "ignorePaths": [],
+    "dictionaryDefinitions": [],
+    "dictionaries": [],
+    "words": [
+        "adicionar",
+        "Adicionar",
+        "Calculo",
+        "Curso",
+        "Dividir",
+        "Estudando",
+        "evento",
+        "igual",
+        "limpar",
+        "mapa",
+        "mapear",
+        "Multiplicar",
+        "operador",
+        "Permitida",
+        "Subtrair",
+        "Teclado"
+    ],
+    "ignoreWords": [
+        "capitalizar",
+        "tecla"
+    ],
+    "import": []
+}
